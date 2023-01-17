@@ -30,7 +30,7 @@ a:link, a:visited, a:active {
 }
  
 body {
-    background-image: url(https://images.wallpapersden.com/image/download/cool-4k-pattern_bGduZWyUmZqaraWkpJRobWllrWdma2U.jpg);
+    background-image: url(./Images/background.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
