@@ -11,11 +11,32 @@ h2, p, figcaption, h3 {
 
 .NavBar {
     text-align: center;
-    border: solid 2px white;
-    background-color: rgb(0, 0, 0, 0.8);
+    border: solid 3px white;
+    background: radial-gradient(rgba(65, 105, 225, 0.8),rgba(0, 0, 0, 0.8));
     border-radius: 5px;
     margin: 10px;
 }
+
+.NavBar input {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(65, 105, 225, 0.8));
+    border-radius: 5px;
+    border: solid 1px white;
+    text-indent: 10px;
+    padding-right: 20px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right;
+}
+
+
+
+::placeholder {
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
 
 .NavBar li {
     display: inline-flex;
@@ -24,6 +45,12 @@ h2, p, figcaption, h3 {
     padding: 10px;
     text-align: center;
     margin: 10px 20px;
+}
+
+.NavBar li:nth-child(5) {
+    text-align: center;
+    border: hidden;
+    background-color: transparent;
 }
 
 
@@ -37,7 +64,7 @@ a:link, a:visited, a:active {
 }
  
 body {
-    background-image: url(./Images/background.jpg);
+    background-image: url(./Images/nebula-stars-space-4k-2b.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -45,7 +72,7 @@ body {
 main {
     border: solid 3px white;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(65, 105, 225, 0.8));
     margin: 10px;
 }
 
@@ -62,7 +89,7 @@ main {
     padding: 10px;
     font-family: sans-serif;
     color: #fff;
-    background-image: linear-gradient(to bottom right, #fa7e1e, #d62976, purple, royalblue);
+    background-image: linear-gradient(to bottom right, white, black, royalblue);
     border-radius: 5px;
     white-space: nowrap;
     border: solid 1px white;
@@ -249,7 +276,7 @@ img {
 }
 
 .fa-css3 {
-    background-image: linear-gradient(to bottom right, rgb(64, 59, 59), rgb(155, 48, 66), rgba(212, 120, 7, 0.677), orange);
+    background: radial-gradient(rgba(60, 61, 63, 0.8),rgba(0, 0, 0, 0.8));;
     color: white;
     border: solid 1px white;
 }
@@ -282,6 +309,10 @@ img {
     border-bottom: 3px solid;
     border-image: linear-gradient(to right, black, white) 1;
 
+}
+
+#socials h3 {
+    margin: 20px auto;
 }
 
 #socials .linkLabel {
