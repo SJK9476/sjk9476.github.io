@@ -133,6 +133,7 @@ main {
     text-decoration: none;
     margin: 10px auto;
     width: 30%;
+    letter-spacing: 2px;
 }
 
 
@@ -150,7 +151,7 @@ main {
 
 img {
     border: solid 1px white;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 #portfolio {
@@ -185,9 +186,9 @@ img {
 }
 
 #portfolio img {
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
     margin: auto auto;
   
 }
@@ -210,8 +211,9 @@ img {
 .fa {
     padding-top: 30px;
     font-size: 30px;
-    width: 140px;
-    height: 110px;
+    padding-top: 15px;
+    width: 110px;
+    height: 95px;;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
