@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Space+Mono&display=swap');
+
 * {
-    font-family: 'Courier New', Courier, monospace ;
+    font-family: 'Nunito Sans', sans-serif;
     color: white;
 }
 
@@ -26,7 +28,7 @@ a:link, a:visited, a:active {
 
 .NavBar a:hover {
     text-decoration: none;
-    background: firebrick;
+    opacity: 0.7;
 }
  
 body {
@@ -35,12 +37,40 @@ body {
     background-attachment: fixed;
 }
 
-#introduction {
+main {
     border: solid 3px white;
-    border-radius: 5px;;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.8);
+    margin: 10px;
+}
+
+.topButton {
+    --offset: 50px; 
+  
+    position: sticky;
+    bottom: 20px;      
+    margin-right: 10px; 
+    margin-left: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #fa7e1e, #d62976, purple, royalblue);
+    border-radius: 5px;
+    white-space: nowrap;
+    border: solid 1px white;
+    opacity: 0.6;
+}
+
+.topButton:hover {
+    opacity: 1;
+}
+
+#introduction {
     position: relative;
     top: 10px;
-    background-color: black;
 }
 
 .button {
@@ -55,15 +85,13 @@ body {
 }
 
 #titleimage {
-    border: solid 3px white;
-    border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
     text-align: center;
 }
 
  #titleimage h2, h3 {
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.8);
     border: solid 2px white;
     border-radius: 3px;
     padding: 5px 10px;
@@ -107,35 +135,32 @@ img {
     border-radius: 50%;
     margin-left: 7%;
     margin-right: 7%;
+    margin-top: 15%;
 }
 
-#portfolio figcaption:hover {
-    opacity: 1;
-}
 
 #introduction p {
     text-align: justify;
     padding: 10px 20px;
+    line-height: 1.5;
 }
 
 #linkgallery {
-    border: solid 3px white;
-    border-radius: 5px;;
     position: relative;
     top: 20px;
-    background-color: black;
     padding: 10px;
 }
 
 .fa {
-    padding: 20px;
+    padding-top: 30px;
     font-size: 30px;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 110px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     margin-top: 50%;
+    border: solid 1px white;
 }
 
 .fa:hover {
@@ -163,15 +188,81 @@ img {
     color: white;
 }
 
+#helpfulLinks a {
+    font-size: 30px;
+    padding-top: 40px;
+    width: 110px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 50%;
+}
+
+#helpfulLinks li {
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+#helpfulLinks li:hover {
+    opacity: 0.7;
+}
+
+.fa-m {
+    background-image: linear-gradient(to bottom right, black, rgb(31, 29, 29), rgb(59, 59, 59));
+    color: white;
+    border: solid 1px white;
+}
+
+.fa-css3 {
+    background-image: linear-gradient(to bottom right, rgb(64, 59, 59), rgb(155, 48, 66), rgba(212, 120, 7, 0.677), orange);
+    color: white;
+    border: solid 1px white;
+}
+
+.fa-stack-overflow {
+    background-image: linear-gradient(to bottom right, rgb(19, 140, 205), rgb(195, 165, 110), rgb(143, 36, 36));
+    color:white;
+    border: solid 1px white;
+}
+
+.fa-dev {
+    background-image: linear-gradient(to bottom right, rgb(64, 59, 59), rgb(155, 48, 66), rgba(212, 120, 7, 0.677), orange);;
+    color: white;
+    border: solid 1px white;
+}
+
+.fa-laptop-code {
+    background-image: linear-gradient(to bottom right, rgb(11, 11, 108), rgb(11, 11, 192), rgb(35, 117, 211));
+    color: white;
+    border: solid 1px white;
+}
+
+
 #socials {
-    border: solid 3px white;
-    border-radius: 5px;;
     position: relative;
     top: 10px;
-    background-color: black;
     margin: 20px auto;
     text-align: center;
 
+}
+
+#socials .linkLabel {
+    display:block;
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 2px;
+    
 }
 
 #socials li {
@@ -182,4 +273,24 @@ img {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
+}
+
+#helpfulLinks {
+    position: relative;
+    top: 10px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+#helpfulLinks .linkLabel {
+    display:block;
+    margin-top: 10px;
+    font-size: 8px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 2px;
 }
