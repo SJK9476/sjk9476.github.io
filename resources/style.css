@@ -105,6 +105,7 @@ main {
     border-top: 3px solid;
     border-bottom: 3px solid;
     border-image: linear-gradient(to left, black, white) 1;
+    font-size: 16px;
 }
 
 .button {
@@ -335,6 +336,18 @@ img {
     margin: 20px auto;
     text-align: center;
 
+}
+
+#helpfulLinks p {
+    text-align: left;
+    margin: 30px 20px;
+}
+
+#helpfulLinks strong {
+    background-color: rgb(0, 0, 0, 0.5);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 5px 5px;
 }
 
 #helpfulLinks .linkLabel {
