@@ -88,7 +88,7 @@ main {
     padding: 10px;
     font-family: sans-serif;
     color: #fff;
-    background-image: linear-gradient(to bottom right, white, black, royalblue);
+    background-image: linear-gradient(to bottom right, rgba(65, 105, 225, 0.8) 1%, rgba(0, 0, 0, 0.8) 60%, rgba(65, 105, 225, 0.8));
     border-radius: 5px;
     white-space: nowrap;
     border: solid 1px white;
