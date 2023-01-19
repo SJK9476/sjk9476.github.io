@@ -18,7 +18,7 @@ h2, p, figcaption, h3 {
 }
 
 .NavBar input {
-    background: rgb(0, 0, 0, 0.5);
+    background: transparent;
     border-radius: 3px;
     border: solid 1px white;
     padding: 3px;
@@ -37,9 +37,10 @@ input:focus::placeholder {
 
 .NavBar li {
     display: inline-flex;
-    background: rgb(0, 0, 0, 0.5);
+    background: transparent;
     border: solid 1px white;
     font-size: 14px;
+    font-weight: bolder;
     letter-spacing: 1px;
     padding: 3px;
     text-align: center;
@@ -49,7 +50,7 @@ input:focus::placeholder {
 .NavBar li:nth-child(5) {
     text-align: center;
     border: hidden;
-    background-color: transparent;
+    background: transparent;
 }
 
 
